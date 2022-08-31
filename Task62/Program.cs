@@ -28,16 +28,16 @@ while (temp <= sqareMatrix.GetLength(0) * sqareMatrix.GetLength(1))
 
 WriteArray(sqareMatrix);
 
-void WriteArray (int[,] array)
+void WriteArray (int[,] matrix)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
+  for (int i = 0; i < matrix.GetLength(0); i++)
   {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-      if (array[i,j] / 10 <= 0)
-      Console.Write($"0{array[i,j]} ") ;
+      if (matrix[i,j] / 10 <= 0)
+      Console.Write($"0{matrix[i,j]} ") ;
 
-      else Console.Write($"{array[i,j]} ");
+      else Console.Write($"{matrix[i,j]} ");
     }
     Console.WriteLine();
   }
